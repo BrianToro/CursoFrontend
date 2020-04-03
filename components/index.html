@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+        <title>Prueba #1</title>
+    </head>
+    <body>
+        <style>
+            body {
+                margin: 0px;
+                background-color: #F64668;
+                font-family: 'Muli', sans-serif;
+            }   
+            .header {
+                width: 100%;
+                height: 80px;
+                background-color: #F64668;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .footer {
+                margin-top: 100%;
+            }
+
+            .header__img {
+                width: 200px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            .header__menu {
+                margin-right: 30px;
+            }
+
+            .header__menu:hover ul, ul:hover {
+                display: block;
+            }
+
+            .header__menu--profile {
+                margin-right: 8px;
+                display: flex;
+                align-items: center;
+            }
+
+            .header__menu--profile img {
+                margin-right: 8px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .header__menu--profile p {
+                margin: 0px;
+                color: white;
+            }
+
+            .header__menu--desp {
+                display: none;
+                list-style: none;
+                padding: 0%;
+                position: absolute;
+                width: 100px;
+                text-align: right;
+                margin: 0px 0px 0px -14px;
+            }
+
+            .header__menu li {
+                margin-bottom: 8px;
+            }
+
+            .header__menu a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .header__menu li a:hover {
+                text-decoration: underline;
+            }
+
+            .main {
+                height: 300px;
+            }
+
+            .main__title {
+                color: white;
+            }
+
+            .input {
+                font-family: 'Muli', sans-serif;
+                font-size: 16px;
+                padding: 0px 10px;
+                border: 2px solid white;
+                border-radius: 20px;
+                width: 60%;
+                height: 30px;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: white;
+                outline: none;
+            }
+
+            ::placeholder {
+                color: white;
+            }
+        </style>
+        <header class="header">
+            <img class="header__img" src="platzi-logo.png" alt="Logo de platzi video">
+            <div class="header__menu">
+                <div class="header__menu--profile">
+                    <img src="./user-icon.png" alt="">
+                    <p>Perfil</p>
+                </div>
+                <div>
+                    <ul class="header__menu--desp">
+                        <li><a href="/">Cuenta</a></li>
+                        <li><a href="/">Cerrar sesion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="main">
+            <h2 class="main__title">¿Que quieres ver hoy?</h2>
+            <input type="text" placeholder="Buscar..." class="input">
+        </section>
+        <footer class="globalCss footer">
+
+        </footer>
+    </body>
+</html>
